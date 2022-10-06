@@ -484,6 +484,7 @@
 		font-size: 14px;
 		line-height: 20px;
 		padding-top: 30px;
+		padding-bottom: 50px;
 	}
 	.footer .social-list {
 		justify-content: center;
@@ -647,7 +648,7 @@
 		display: block;
 	}
 	.estimation-block__buttons .btn-main {
-		margin-top: 15px;
+		margin-top: 30px;
 		width: 100%;
 	}
 	.file-upload label {
