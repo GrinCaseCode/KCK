@@ -204,6 +204,11 @@
 	.about-block {
 		padding: 45px 80px;
 	}
+	.item-category__list {
+    font-size: 14px;
+    line-height: 30px;
+    right: -27px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -248,10 +253,7 @@
 		font-size: 15px;
 		line-height: 25px;
 	}
-	.item-category__image {
-		height: 250px;
-		margin-bottom: 20px;
-	}
+
 	.consultation-block {
 		padding-left: 20px;
 	}
@@ -376,6 +378,10 @@
 	.btn-fixed {
 		border-radius: 0;
 	}
+		.item-category__list {
+    font-size: 12px;
+    line-height: 26px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -674,6 +680,11 @@
 	.about-item {
 		max-width: 100%;
 	}
+	.item-category__list {
+    font-size: 14px;
+    line-height: 28px;
+    right: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
