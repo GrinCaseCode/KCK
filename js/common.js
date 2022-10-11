@@ -180,7 +180,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 		]
 	});
-
 	$('.slider-sertificats').slick({
 		arrows: true,
 		dots: false,
