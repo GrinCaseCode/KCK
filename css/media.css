@@ -105,7 +105,57 @@
 		font-size: 18px;
 		line-height: 26px;
 	}
+	.vacancies .form-main {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.vacancies .title-form {
+		font-size: 18px;
+	}
+	.item-dropdown__head {
+		font-size: 20px;
+		line-height: 32px;
+		padding: 22px 20px;
+		padding-left: 34px;
+	}
+	.item-dropdown__value {
+		margin-right: 20px;
+	}
+	.image-action {
+		margin-bottom: 40px;
+		height: 280px;
+	}
+	.item-service__content {
+		padding: 45px 55px;
+	}
+	.item-service__image {
+		height: 605px;
+	}
+	.delivery-block {
+		font-size: 19px;
+	}
+	.delivery-block__title {
+		font-size: 22px;
+		line-height: 31px;
+	}
+	.image-delivery img {
+		max-width: 750px;
+	}
+	.delivery-block_right {
+		line-height: 28px;
+	}
+	.form-delivery .title-block {
+		padding-left: 45px;
+	}
+	.form-delivery {
+		padding-right: 60px;
+	}
+	.unit-service__title {
+		padding: 32px 30px;
+		font-size: 17px;
+	}
 }
+
 @media only screen and (max-width : 1400px) {
 	body {
 		font-size: 14px;
@@ -310,7 +360,92 @@
 	.cooperation-form .checkbox_main:last-child {
 		margin-bottom: 0;
 	}
+	.vacancies .form-main {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 35px;
+	}
+	.vacancies .title-form {
+		font-size: 17px;
+		margin-bottom: 13px;
+	}
+	.image-action {
+		height: 250px;
+	}
+	.actions-page {
+		padding-bottom: 100px;
+	}
+	.item-service__title {
+		font-size: 22px;
+		line-height: 34px;
+	}
+	.item-service__content {
+		padding: 35px 35px;
+	}
+	.item-service__image {
+		height: 510px;
+	}
+	.delivery-block {
+		font-size: 18px;
+		line-height: 26px;
+		padding: 30px 35px;
+	}
+	.delivery-block__title::before {
+		left: -35px;
+	}
+	.image-delivery img {
+		max-width: 675px;
+	}
+	.form-delivery .title-block {
+		padding-left: 30px;
+	}
+	.form-delivery {
+		padding-right: 35px;
+	}
+	.delivery-block__title {
+		font-size: 20px;
+		line-height: 31px;
+	}
+	.service-page .billbord-content {
+		padding-top: 50px;
+	}
+	.service-about .delivery-block {
+		padding-right: 70px;
+	}
+	.service-info > .row:nth-child(even) .service-info__content,
+	.service-info__content {
+		margin: 0;
+	}
+	.service-info {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.service-info > .row {
+		margin-bottom: 45px;
+	}
+	.service-test {
+		padding: 50px;
+		padding-top: 37px;
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 45px;
+	}
+	.title-main {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.service-offer .title-main {
+		max-width: 1075px;
+	}
+	.unit-service {
+		height: 390px;
+	}
+	.unit-service__title {
+		padding: 25px 25px;
+		font-size: 16px;
+	}
 }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.search-form {
@@ -527,7 +662,106 @@
 	.cooperation-block .title-section {
 		padding-bottom: 25px;
 	}
+	.item-dropdown__head {
+		font-size: 18px;
+		line-height: 30px;
+		padding: 22px 20px;
+	}
+	.item-dropdown__content {
+		padding: 0 20px;
+		padding-bottom: 40px;
+	}
+	.vacancies .form-main {
+		padding: 30px 20px;
+	}
+	.image-action {
+		height: 220px;
+	}
+	.item-service__title {
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.item-service__image {
+		height: 460px;
+	}
+	.delivery-block {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.image-delivery img {
+		max-width: 500px;
+	}
+	.row_form > div {
+		padding: 0 15px;
+	}
+	.row_form {
+		margin: 0 -15px;
+	}
+	.delivery-block__title {
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.descr-billbord {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 55px;
+	}
+	.service-about .delivery-block {
+		padding-right: 35px;
+	}
+	.service-about {
+		padding-bottom: 50px;
+	}
+	.title-middle {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+	.service-info {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.service-info p {
+		margin-bottom: 15px;
+	}
+	.service-test .title-section {
+		padding-bottom: 25px;
+	}
+	.service-test__left {
+		padding-right: 0;
+	}
+	.service-test {
+		padding: 25px;
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 35px;
+	}
+	.title-main {
+		font-size: 25px;
+		line-height: 33px;
+	}
+	.unit-service {
+		height: 330px;
+	}
+	.unit-service__title {
+		padding: 20px 15px;
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.service-offer {
+		padding-bottom: 45px;
+	}
+	.service-offer .title-main {
+		margin-bottom: 30px;
+	}
+	.consultation-bottom .btn-main {
+		min-width: 180px;
+	}
+	.service-page ~ .consultation-bottom {
+		padding-bottom: 40px;
+	}
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -767,6 +1001,67 @@
 	.cooperation-block {
 		padding: 25px 30px;
 	}
+	.vacancies {
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+	.actions-page {
+		padding-bottom: 60px;
+	}
+	.form-delivery .title-block {
+		padding-left: 0;
+	}
+	.form-delivery {
+		padding: 30px;
+	}
+	.checkbox-mobile {
+		justify-content: center;
+		display: flex;
+	}
+	.form-delivery .checkbox {
+		margin-top: 20px;
+	}
+	.row_delivery > div {
+		margin-top: 25px;
+	}
+	.service-page .billbord-content {
+		padding-top: 40px;
+		margin-bottom: 30px;
+		min-height: 360px;
+	}
+	.descr-billbord {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 35px;
+		max-width: 475px;
+	}
+	.descr-big {
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.service-about .row_delivery > div {
+		margin-top: 25px;
+	}
+	.service-info .col-lg-7 {
+		order: -1;
+	}
+	.service-info > .row {
+		margin-bottom: 30px;
+	}
+	.service-info > .row:nth-child(even) .service-info__image {
+		display: block;
+		justify-content: flex-start;
+	}
+	.service-test__left {
+		display: block;
+		margin-bottom: 30px;
+	}
+	.consultation-bottom .btn-main {
+		min-width: 220px;
+	}
+	.service-about {
+		padding-bottom: 30px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -991,6 +1286,73 @@
 	.cooperation {
 		padding-bottom: 45px;
 	}
+	.item-dropdown__head {
+		display: block;
+	}
+	.item-dropdown__arrow {
+		top: 20px;
+		right: 15px;
+		position: absolute;
+	}
+	.item-dropdown__head {
+		padding-right: 50px;
+		position: relative;
+	}
+	.item-dropdown__value {
+		display: none;
+	}
+	.item-dropdown.active .item-dropdown__value {
+		display: block;
+	}
+	.text-block {
+		padding-top: 35px;
+	}
+	.text-block .descr-section {
+		padding-bottom: 20px;
+	}
+	.text-block p {
+		margin-bottom: 15px;
+	}
+	.services-page {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
+	.delivery-page .tabs {
+		margin-right: -15px;
+		white-space: nowrap;
+	}
+	.delivery-page .tabs li {
+		margin-right: 15px;
+	}
+	.delivery-page .tab-container {
+		padding-top: 25px;
+	}
+	.descr-big br {
+		display: none;
+	}
+	.descr-big {
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.service-test .title-section {
+		padding-bottom: 15px;
+	}
+	.title-main {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.service-offer .title-main {
+		margin-bottom: 20px;
+	}
+	.slider-services {
+		margin-right: -15px;
+	}
+	.unit-service {
+		width: 260px;
+	}
+	.service-test p {
+		margin-bottom: 15px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1115,6 +1477,81 @@
 		margin: 0 -15px;
 		padding: 25px 15px;
 	}
+	.item-dropdown__head {
+		font-size: 16px;
+		line-height: 26px;
+		padding: 20px 15px;
+		padding-right: 50px;
+	}
+	.item-dropdown__arrow {
+		top: 13px;
+		right: 15px;
+	}
+	.item-dropdown__content {
+		padding: 0 15px;
+		padding-bottom: 35px;
+	}
+	.item-dropdown__content br + br {
+		display: none;
+	}
+	.image-action {
+		height: 175px;
+		margin-bottom: 25px;
+	}
+	.actions-page {
+		padding-bottom: 45px;
+	}
+	.item-service__image {
+		height: 420px;
+	}
+	.delivery-block {
+		font-size: 14px;
+		line-height: 23px;
+		padding: 25px 20px;
+	}
+	.delivery-block__title::before {
+		left: -20px;
+		height: 30px;
+		width: 3px;
+	}
+	.image-delivery img {
+		max-width: 400px;
+	}
+	.form-delivery {
+		padding: 25px 20px;
+	}
+	.form-delivery .title-block br {
+		display: none;
+	}
+	.delivery-block__title {
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 15px;
+	} 
+	.delivery-page {
+		padding-bottom: 45px;
+	}
+	.delivery-block br + br {
+		display: none;
+	}
+	.descr-billbord {
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.service-about .delivery-block {
+		padding-right: 20px;
+	}
+	.service-offer {
+		padding-bottom: 35px;
+	}
+	.service-page ~ .consultation-bottom .title-big {
+    font-size: 23px;
+    line-height: 34px;
+}
+.service-test {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 }
 
 /* Custom, iPhone Retina */
