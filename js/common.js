@@ -244,7 +244,101 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+		]
+	});
+
+
+
+	/*range slider*/
+
+	$(function() {
+		var $range = $(".range-catalog_price .range-catalog__input"),
+		$from = $(".range-catalog_price .control-input__from"),
+		$to = $(".range-catalog_price .control-input__to"),
+		min = 20,
+		max = 5000;
+		$range.ionRangeSlider({
+			type: "double",
+			min: min,
+			max: max,
+			from: 20,
+			to: 2600,
+			prettify_enabled: true,
+			onChange: function(data) {
+				updateValues()
+			}
+		});
+		$range = $range.data("ionRangeSlider");
+		var updateValues = function() {
+			var res = $range.result;
+			$from.val(res.from, true);
+			$to.val(res.to,true)
+		};
+		$from.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				from: this.value
+			})
+		}).on("blur", updateValues);
+		$to.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				to: this.value
+			})
+		}).on("blur", updateValues)
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
+
+
+	$(".item-filter:not(.item-filter_open) .item-filter__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-filter__content").slideToggle(200);
+	});
+
+	$(".btn-main_filter").click(function() {
+				$(".sidebar-filter").slideToggle(200);
+			});
+
 
 
 	 // стайлер для select
