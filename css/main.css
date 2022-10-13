@@ -2855,6 +2855,7 @@ input[type=number]
 }
 .personal-block__descr strong {
 	font-weight: 500;
+	white-space: nowrap;
 }
 .personal-page {
 	padding-bottom: 55px;
