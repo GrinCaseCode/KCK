@@ -134,76 +134,22 @@
 			</div>
 		</header>
 
-		<section class="contacts-page">
+		<section class="thanks">
 			<div class="container">
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
-					<li>Контакты</li>
-				</ul>
-				<div class="row">
-					<div class="col-xl-7 col-lg-8">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="item-contact">
-									<div class="item-contact__title">Адреса:</div>
-									<p><strong>Симферополь</strong> <br>ул. Линейная, д.2, литер М, ком 224</p>
-									<br>
-									<p><strong>Севастополь,</strong> <br>ул. Соловьева, 10, склад 6</p>
-								</div>
-								<div class="item-contact">
-									<div class="item-contact__title">Телефон:</div>
-									<p><a href="tel:+79782038488">+7 (978) 203-84-88</a></p>
-								</div>
-								<div class="item-contact">
-									<div class="item-contact__title">Почта:</div>
-									<p><a href="mailto:omsm@kskcrimea.ru">omsm@kskcrimea.ru</a></p>
-								</div>
-							</div>
-							<div class="col-xl-5 offset-xl-1 col-md-6">
-								<div class="item-contact">
-									<div class="item-contact__title">Реквизиты:</div>
-									<p><strong>ООО «Крымская Светотехническая Компания»</strong></p>
-									<p>Юр. адрес: 295018, Республика Крым, г.о.Симферополь, г. Симферополь,</p>
-									<p>ул. Линейная, д.2, Литер М, ком. 224</p>
-									<p>ИНН: 9102036595</p>
-									<p>ОГРН: 1149102067410</p>
-									<p>р/с № 40702810341760000017</p>
-									<p>К/с № 30101810335100000607</p>
-									<p>РНКБ Банк (ПАО)</p>
-									<p>БИК: 043510607</p>
-									<p>Ген. директор Симановский А.В</p>
-								</div> 
-							</div>
+				<div class="thanks-block">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="title-thanks">Спасибо, <br>ваша заявка принята!</div>
+							<div class="descr-thanks">Мы свяжемся с Вами в ближайшее время и обсудим детали</div>
+							<a href="/" class="btn-main">вернуться назад</a>
 						</div>
-					</div>
-					<div class="offset-xl-1 col-lg-4">
-						<div class="form-main">
-							<div class="title-form">обратная связь</div>
-							<div class="descr-form">Заполните форму и мы свяжемся с вами в ближайшее время</div>
-							<form>
-								<div class="item-form">
-									<input type="text" placeholder="Имя" required="required">
-								</div>
-								<div class="item-form">
-									<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
-								</div>
-								<div class="item-form">
-									<input type="text" placeholder="Сообщение" required="required">
-								</div>
-								<button class="btn-main">отправить</button>
-								<div class="checkbox-wrap">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" required="required" checked="checked" />
-											<span>Согласие на обработку персональных данных</span>
-										</label>
-									</div>
-								</div>
-							</form>
+						<div class="col-lg-6">
+							<div class="image-thanks">
+								<img src="img/thanks.png" alt="alt">
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="map"></div>
 			</div>
 		</section>
 
@@ -326,35 +272,6 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="js/common.js?ver=1.5"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script>
-	$(document).ready(function() {
-		ymaps.ready(init);
-
-		function init() {
-			var myMap = new ymaps.Map('map', {
-				center: [44.966428, 34.085064],
-				zoom: 17	
-			}, {
-				searchControlProvider: 'yandex#search'
-			});		
-
-			myPlacemark1 = new ymaps.Placemark([44.966428, 34.085064], {
-				balloonContent: '<p class="text-map">г. Севастополь, ул. Руднева, 30-Б</p>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.svg',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [31, 41],
-				iconImageOffset: [-15, -41],
-				balloonOffset: [ 0, -41 ]
-			});
-			myMap.controls.remove('searchControl');
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark1);
-		}
-	});
-</script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
