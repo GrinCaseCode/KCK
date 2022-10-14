@@ -708,6 +708,7 @@ form {
 	justify-content: center;
 	cursor: pointer;
 	font-weight: 400;
+  user-select: none;
 }
 .quantity input {
 	flex: 1;
@@ -3019,7 +3020,7 @@ input[type=number]
 	position: absolute;
 	display: block;
 	content: " ";
-	top: 3px;
+	top: 5px;
 	left: 0;
 	width: 8px;
 	height: 8px;
@@ -3072,7 +3073,7 @@ input[type=number]
 	margin-left: 22px;
 	background-color: #fff;
 }
-.card-info .price-ain {
+.card-info .price-main {
 	font-size: 24px;
 	line-height: 34px;
 }
@@ -3087,6 +3088,9 @@ input[type=number]
 .card-info .btn-main {
 	min-width: 183px;
 }
+.card-info .btn-main:hover {
+	background-color: #FFB51E;
+}
 .card-info .btn-main img {
 	margin-left: 15px;
 }
@@ -3096,3 +3100,29 @@ input[type=number]
 .card-info__content:last-child {
 	border: none;
 } 
+.card .tabs {
+	margin-top: 66px;
+	padding-right: 120px;
+	justify-content: space-between;	
+}
+.card .tabs li {
+	flex: initial;
+}
+.card .tabs a::before {
+	display: none;
+}
+.card .tabs a {
+	padding: 28px 10px;
+}
+.card .tabs li:nth-child(3) a {
+	width: auto;
+}
+.title-section_recomendation {
+	padding-top: 70px;
+	padding-bottom: 42px;
+	font-weight: 500;
+}
+.card .tab-container {
+	font-size: 14px;
+	line-height: 22px;
+}

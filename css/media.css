@@ -492,6 +492,31 @@
     .table-wrap td:nth-child(2) {
     width: 288px;
 }
+.slider-for {
+    margin-left: -15px;
+    }
+    .slider-for__item {
+    height: 435px;
+}
+.slider-nav__item {
+    height: 100px;
+    margin: 7px 0;
+    }
+    .card-info__prices {
+    margin-bottom: 15px;
+}
+.card-info ul {
+    padding-bottom: 0;
+}
+.card-info__articul {
+    margin-bottom: 10px;
+}
+.card-info__content {
+    padding: 13px 25px;
+    }
+    .card .tabs {
+    	padding-right: 90px;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -853,6 +878,11 @@
 .table-wrap td:nth-child(2) {
     width: 158px;
 }
+.title-card {
+    font-size: 29px;
+    line-height: 43px;
+    padding-bottom: 30px;
+    }
 }
 
 
@@ -1237,6 +1267,61 @@
 .image-thanks {
 	margin-top: 30px;
 }
+.slider-nav {
+	margin-top: 20px;
+	max-width: 100%;
+	padding: 0 50px;
+}
+.col_for {
+	order: -1;
+}
+.slider-nav__item {
+	margin: 0 7px;
+}
+.slider-nav .slick-arrow {
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.slider-nav .slick-prev {
+	left: 0;
+	right: auto;
+}
+.slider-nav .slick-next {
+	right: 0;
+	left: auto;
+}
+.slider-nav .slick-arrow img {
+    transform: rotate(0deg);
+}
+.card-info {
+	margin-top: 20px;
+	min-height: auto;
+}
+.title-section_recomendation {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    }
+    .card {
+    	padding-bottom: 50px;
+    }
+    .card .tabs {
+    margin-top: 35px;
+}
+.card .tabs {
+	padding-right: 25px;
+}
+.card .tabs {
+	padding-bottom: 0;
+}
+.card .tabs a {
+    padding: 15px 5px;
+}
+.slider-for {
+	margin-left: 0;
+}
 }
 
 /* Small Devices, Tablets */
@@ -1561,6 +1646,20 @@
     .personal-page {
     	padding-bottom: 40px;
     }
+    .title-card {
+    font-size: 22px;
+    line-height: 39px;
+    padding-bottom: 20px;
+}
+.slider-for__item {
+    height: 365px;
+}
+.slider-nav__item {
+	height: 75px;
+}
+.card .tab-container {
+	padding-top: 25px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1804,6 +1903,30 @@
 }
 .personal-block__descr {
 	padding-top: 10px;
+}
+.slider-for__item {
+    height: 320px;
+}
+.slider-nav {
+	padding: 0;
+}
+.card-info__title {
+    font-size: 14px;
+    line-height: 20px;
+    }
+    .slider-nav .slick-prev {
+    left: -12px;
+}
+.slider-nav .slick-next {
+    right: -12px;
+    }
+    .card .tabs a {
+    padding: 15px 0px;
+}
+.card .tabs {
+	padding: 0 5px;
+	justify-content: space-between;
+	margin-right: 0;
 }
 }
 
