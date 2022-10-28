@@ -59,12 +59,12 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	}
 
-	 $(".item-dropdown__head").click(function() {
-  $(this).parent().toggleClass("active");
-  $(this).siblings().slideToggle(200);
-  $(this).parent().siblings(".item-dropdown").removeClass("active");
-  $(this).parent().siblings(".item-dropdown").find(".item-dropdown__content").slideUp(200);
-});
+	$(".item-dropdown__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings().slideToggle(200);
+		$(this).parent().siblings(".item-dropdown").removeClass("active");
+		$(this).parent().siblings(".item-dropdown").find(".item-dropdown__content").slideUp(200);
+	});
 
 	//слайдер
 
@@ -245,36 +245,33 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 	$('.slider-for').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		asNavFor: '.slider-nav',
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
 	});
 
-	$('.slider-nav').slick({
+
+
+	$('.slider-images').slick({
 		arrows: true,
 		dots: false,
 		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		vertical: true,
-		verticalSwiping: true,
-		asNavFor: '.slider-for',
 		touchThreshold: 1000,
-		focusOnSelect: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
 		responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 768,
 			settings: {
-				vertical: false,
-				verticalSwiping: false,
+				arrows: false,
+		dots: true,
 			}
 		}
 		]
@@ -336,8 +333,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 	$(".btn-main_filter").click(function() {
-				$(".sidebar-filter").slideToggle(200);
-			});
+		$(".sidebar-filter").slideToggle(200);
+	});
 
 
 
