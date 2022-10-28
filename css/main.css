@@ -2140,6 +2140,12 @@ input[type=number]
 	background-color: #F5F5F5;
 	flex: none;
 }
+.item-dropdown__arrow img {
+	transition: all 0.3s;
+}
+.item-dropdown.active .item-dropdown__arrow img {
+	transform: rotate(180deg);
+}
 .item-dropdown__title {
 	margin-right: auto;
 	font-weight: 700;
